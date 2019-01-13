@@ -1,0 +1,96 @@
+/*登录处理*/
+.login{
+    display: none;
+    position: fixed;
+    z-index: 999;
+    background-color: #fff;
+    width: 590px;
+    height: 304px;
+    border: 1px solid #979797;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+.login span{
+    display: block;
+    background-color: #DC4949;
+    width: 100%;
+    height: 4px;
+}
+/*关闭按钮*/
+.login .close_box{
+    width: 100%;
+    height: 45px;
+}
+.login .close_box font{
+    font-size: 20px;
+    display: inline-block;
+    width: 46px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+    color: #A1A1A1;
+    font-weight: 300;
+}
+.login .close_box font:hover {
+    background-color: #DC4949;
+    color: #fff;
+}
+.login #form_login{
+    margin-top: 15px;
+    text-align: center;
+}
+.login h1{
+    font-weight: 300;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+}
+.login  p label{
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    text-align: right;
+    line-height: 40px;
+    margin-right: 20px;
+    font-size: 14px;
+}
+.login p input{
+    height: 40px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding-left: 35px;
+    width: 300px;
+    line-height: 40px;
+    color: #666;
+}
+.login p input#username{
+    background: url("../images/user.png") no-repeat 10px center;
+}.login p input#psw{
+    background: url("../images/password.png") no-repeat 10px center;
+}
+ .login input[type="submit"]{
+     margin-top: 20px;
+    background: url("../images/bt1_hover.png") no-repeat;
+     width: 92px;
+     height: 40px;
+     border: 0;
+     color: #fff;
+     font-size: 14px;
+     margin-right: 30px;
+     text-align: center;
+ }
+.login input[type="reset"]{
+    margin-top: 20px;
+    background: url("../images/bt2_hover.png") no-repeat;
+    width: 128px;
+    border: 0;
+    height: 40px;
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+}
+.login input[type="submit"]:hover{
+    background: url("../images/bt1_active.png") no-repeat;
+}

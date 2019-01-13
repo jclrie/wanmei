@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<!--首页-->
+<html><head> <meta charset="UTF-8">
+    <title>完美商城</title>
+    <meta name="Description" content="完美商城">
+    <meta name="Keywords" content="完美商城">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+<body style="text-align: left;">
+<!-- 头信息 -->
+<div class="header">
+    <div class="wrap cf">
+        <span class="f_left welcome">欢迎来到完美世界周边商城！</span>
+        <div class="f_right header_cart_tip">
+            <!--购物车-->
+            <a href="shoppingcart.html" class="text"><span class="icon"></span>购物车（<span class="cartNum">0</span>）</a>
+            <div class="cart_list"></div>
+        </div>
+        <dl class="f_right">
+            <!--订单与关注-->
+            <dt><a href="#" class="needLogin">我的订单</a></dt>
+            <dd><a href="#" class="needLogin">我的关注</a></dd>
+        </dl>
+        <dl class="f_right userlogin">
+            <!--登录 注册-->
+        <dt><a href="#" class="needLogin" id="login">登录</a></dt>
+        <dd><a href="register.html" target="_blank">注册</a></dd>
+</dl>
+    </div>
+</div>
+<!--登录层-->
+<div class="login">
+    <span></span>
+    <!--关闭按钮-->
+    <div class="close_box">
+        <font>×</font>
+    </div>
+    <!--表单登录-->
+    <h1>账号登录</h1>
+    <form action="" method="post" id="form_login">
+       <p>
+           <label for="username">用户名</label>
+           <input type="text" id="username" placeholder="admin">
+       </p>
+        <p>
+            <label for="psw">密码</label>
+            <input type="text" id="psw" placeholder="psw">
+        </p>
+        <input type="submit"  value="登录">
+        <input type="reset" value="重置">
+    </form>
+</div>
+<!-- 右侧悬浮条 -->
+<div class="fixed_bar">
+    <dl>
+        <dd class="center">
+            <a href="#" target="_blank" class="needLogin"><span></span></a>
+            <p class="tip"><a href="#" class="needLogin">个人中心</a></p>
+        </dd>
+        <dd class="my_like">
+            <a href="#" target="_blank" class="needLogin"><span></span></a>
+            <p class="tip"><a href="#" class="needLogin">我的关注</a></p>
+        </dd>
+        <dd class="fixed_cart_tip">
+            <a href="shoppingcart.html"><span><i></i>购物车<font class="cartNum">0</font></span></a>
+        </dd>
+        <dd class="online">
+            <a href="#" target="_blank" class="needLogin"><span></span></a>
+            <p class="tip"><a href="#" target="_blank" class="needLogin">在线客服</a></p>
+        </dd>
+    </dl>
+<p class="go_top" title="Scroll Back to Top" style="opacity: 0;"><a href="javascript:void(0)"><span></span></a></p></div>
+<!-- 顶部导航 -->
+<div class="top_nav">
+    <div class="wrap cf">
+        <a href="#" class="f_left logo logo_wm"><img src="images/logo_wm.png" width="120" height="41" alt="" title="完美商城"></a>
+        <a href="#" class="f_left logo logo_shop"><img src="images/logo_shop.png" width="55" height="27" alt="" title="完美商城"></a>
+        <div class="f_left all_wares">
+            <p class="text"><span></span>全部商品</p>
+            <ul style="display: none;">
+                    <li>
+                        <a href="#" target="_blank" class="ellipsis2" title="DOTA2神秘商店">DOTA2神秘商店<em></em></a>
+                            <dl>
+                                    <dd><a href="#" target="_blank">手办扭蛋</a></dd>
+                                    <dd><a href="#" target="_blank">创意T恤</a></dd>
+                                    <dd><a href="#" target="_blank">焕新服饰</a></dd>
+                                    <dd><a href="#" target="_blank">生活用品</a></dd>
+                                    <dd><a href="#" target="_blank">毛绒合辑</a></dd>
+                            </dl>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="ellipsis2" title="完美世界周边">完美世界周边<em></em></a>
+                            <dl>
+                                    <dd><a href="#" target="_blank">梦间集周边</a></dd>
+                                
+                                    <dd><a href="#" target="_blank">诛仙3专区</a></dd>
+                            </dl>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="ellipsis2" title="CSGO正版周边">CSGO正版周边<em></em></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="ellipsis2" title="姜小虎系列周边">姜小虎系列周边<em></em></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="ellipsis2" title="游戏外设">游戏外设<em></em></a>
+                            <dl>
+                                    <dd><a href="#" target="_blank">键盘</a></dd>
+                                    <dd><a href="#" target="_blank">鼠标</a></dd>
+                                    <dd><a href="#" target="_blank">耳机</a></dd>
+                            </dl>
+                    </li>
+            </ul>
+        </div>
+        <ul class="nav f_left">
+            <li><a href="#" target="_blank">首页</a></li>
+            <li><a href="#" target="_blank">完美世界周边</a></li>
+            <li><a href="#" target="_blank">DOTA2专区</a></li>
+            <li><a href="#" target="_blank">FAQ</a></li>
+        </ul>
+        <div class="f_right header_search">
+            <!--顶部侧搜索框-->
+            <form action="" method="get" class="cf">
+                <input type="text" class="text " data-old-key="" value="">
+                <input type="button" class="btn">
+                <span class="keyword">
+                    
+                        <a href="#" class="tj_link" data-url="#" data-pid="346" target="_blank">敌法师</a>
+                    
+                        <a href="#" class="tj_link" data-url="#" data-pid="454" target="_blank">国际金猪</a>
+                    
+                </span>
+                <div class="keyword_list">
+                    <dl>
+                        
+                    </dl>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- 通栏轮播 -->
+<div class="header_slide">
+    <div class="hd"><a href="javascript:void(0)" class=""></a><a href="javascript:void(0)" class=""></a><a href="javascript:void(0)" class="on"></a></div>
+    <div class="bd">
+        <div class="tempWrap" style="overflow: hidden; position: relative; width: auto;"><ul class="cf super_slide" style="position: relative; overflow: hidden; padding: 0px; margin: 0px; width: 4749px; left: -3166px;">
+                <li style="background: url(&quot;images/dd2da38981694ff088124d978e52a67b.jpg&quot;) center top no-repeat; float: left; width: 1583px;"><a href="#" class="tj_link" title="外设活动" data-url="#" data-pid="" target="_blank"></a></li>
+                <li style="background: url(&quot;images/d9c72b4bdc2d4f3b9fbce61df9099344.jpg&quot;) center top no-repeat; float: left; display: list-item; width: 1583px;"><a href="#" class="tj_link" title="TI8扭蛋" data-url="#" data-pid="531" target="_blank"></a></li>
+                <li style="background: url(&quot;images/eec5d3cdb61f4972b6f926e6e20a3cff.jpg&quot;) center top no-repeat; float: left; display: list-item; width: 1583px;"><a href="#" class="tj_link" title="TI8衣服" data-url="#" data-pid="" target="_blank"></a></li>
+        </ul></div>
+        <a class="prev" href="javascript:void(0)"><span></span></a>
+        <a class="next" href="javascript:void(0)"><span></span></a>
+    </div>
+</div>
+    <div class="buying">
+        <div class="wrap">
+            <!-- 广告位 -->
+            <div class="ad_list">
+                    <a href="#" data-url="#" data-pid="515" target="_blank" class="in tj_link"><img src="images/58c1278cc6e54670ab72d6f9b9b3f235.jpg" width="386" height="160" title="耳机" alt="耳机"></a>
+                    <a href="#" data-url="#" data-pid="438" target="_blank" class="in tj_link"><img src="images/e9142b96f1094ecc9b5735c621472268.jpg" width="386" height="160" title="置顶" alt="置顶"></a>
+                    <a href="#" data-url="#" data-pid="512" target="_blank" class="in tj_link"><img src="images/1de8180f9ce34e69851c42d7fbefae1c.jpg" width="386" height="160" title="诛仙活动" alt="诛仙活动"></a>
+            </div>
+        </div>
+    </div>
+    <!-- 专区 -->
+<!--Dota2神秘商店-->
+                <div class="area dota2_area">
+                    <div class="wrap">
+                        <div class="title_main">
+                            <p class="f_left"><span class="icon"><img src="images/46a762db-d63e-4c6e-9d63-0bbb986905ba.jpg"></span>Dota2神秘商店</p>
+                            <dl class="f_left">
+                                    <dd link="#" class="on"><a href="javascript:void(0)">活动推荐</a></dd>
+                                    <dd link="#" class=""><a href="javascript:void(0)">精品手办</a></dd>
+                                    <dd link="#" class=""><a href="javascript:void(0)">创意T恤</a></dd>
+                                    <dd link="#" class=""><a href="javascript:void(0)">毛绒合集</a></dd>
+                                    <dd link="#" class=""><a href="javascript:void(0)">游戏生活</a></dd>
+                            </dl>
+                            <a href="#" data-target-href="" target="_blank" class="f_right more">更多<span></span></a>
+                        </div>
+                        <div class="cf">
+                            <a href="#" target="_blank" class="f_left ad in"><img src="images/93f67a9f-09aa-473a-9dda-da8add66db93.jpg" width="226" height="614" alt=""></a>
+                            <div class="tempWrap" style="overflow:hidden; position:relative; width:949px"><div class="f_left content" style="width: 4745px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: 0px;">
+                                    <div class="main" style="float: left; width: 949px;">
+                                            <div class="area_slide dota_slide f_left in">
+                                                <div class="hd"><a href="javascript:void(0)" class="on"></a></div>
+                                                <div class="bd">
+                                                    <div class="tempWrap" style="overflow:hidden; position:relative; width:467px"><ul class="cf" style="width: 467px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: 0px;">
+                                                            <li style="float: left; width: 467px;"><a href="productlist.html" target="_blank"><img src="images/7cef96d122b64cf7976e4233ef0bbc07.jpg"></a></li>
+                                                    </ul></div>
+                                                </div>
+                                            </div>
+                                            <div class="product-item list in">
+                                                <!--点赞的地方 -->
+                                                <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>0</font></a>
+                                                <a href="#" target="_blank"><img src="images/042cbcd654af4bb69fd885d0d6e9d0ca_160.jpg" alt="DOTA2-2018年国际邀请赛 主题马克杯" title="DOTA2-2018年国际邀请赛 主题马克杯"></a>
+                                                <p class="name ellipsis" title="DOTA2-2018年国际邀请赛 主题马克杯" style="word-wrap: break-word; word-break: break-all;">DOTA2-2018年国际邀请赛 主题马克杯</p>
+                                                <p class="price">¥118.00
+                                                </p>
+                                                <div class="add">
+                                                    <a class="star stars0" href="#"></a>
+                                                                    <a href="#" class="btn" target="_blank" data-pid="522"><span></span>加入购物车</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-item list in" style="margin-right:0;">
+                                                <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>0</font></a>
+                                                <a href="#" target="_blank"><img src="images/d9cde1a175234cb8b4032fcc4d55aa34_160.jpg" alt="DOTA2-2018年国际邀请赛 卫衣" title="DOTA2-2018年国际邀请赛 卫衣"></a>
+                                                <p class="name ellipsis" title="DOTA2-2018年国际邀请赛 卫衣" style="word-wrap: break-word; word-break: break-all;">DOTA2-2018年国际邀请赛 卫衣</p>
+                                                <p class="price">¥499.00
+                                                </p>
+                                                <div class="add">
+                                                    <a class="star stars0" href="#"></a>
+                                                                    <a href="#" class="btn" target="_blank"><span></span>加入购物车</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-item list in">
+                                                <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>0</font></a>
+                                                <a href="#" target="_blank"><img src="images/4a1822178e6442df96966a3b7a86ae7f_160.jpg" alt="DOTA2-鼠标垫 打团挚爱" title="DOTA2-鼠标垫 打团挚爱"></a>
+                                                <p class="name ellipsis" title="DOTA2-鼠标垫 打团挚爱" style="word-wrap: break-word; word-break: break-all;">DOTA2-鼠标垫 打团挚爱</p>
+                                                <p class="price">¥239.00
+                                                </p>
+                                                <div class="add">
+                                                    <a class="star stars0" href="#"></a>
+                                                                    <a href="#" class="btn" target="_blank" data-pid="519"><span></span>加入购物车</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-item list in">
+                                                <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>0</font></a>
+                                                <a href="#" target="_blank"><img src="images/fdec101e2cdc434e95fcdfcb46bfb070_160.jpg" alt="DOTA2-发条技师 马克杯" title="DOTA2-发条技师 马克杯"></a>
+                                                <p class="name ellipsis" title="DOTA2-发条技师 马克杯" style="word-wrap: break-word; word-break: break-all;">DOTA2-发条技师 马克杯</p>
+                                                <p class="price">¥248.00
+                                                </p>
+                                                <div class="add">
+                                                    <a class="star stars0" href="#"></a>
+                                                                    <a href="#" class="btn" target="_blank" data-pid="523"><span></span>加入购物车</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-item list in">
+                                                <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>0</font></a>
+                                                <a href="#" target="_blank"><img src="images/7de16d751e3043978898fd0cdef47192_160.jpg" alt="DOTA2 - TI8主题选手服" title="DOTA2 - TI8主题选手服"></a>
+                                                <p class="name ellipsis" title="DOTA2 - TI8主题选手服" style="word-wrap: break-word; word-break: break-all;">DOTA2 - TI8主题选手服</p>
+                                                <p class="price">¥499.00
+                                                </p>
+                                                <div class="add">
+                                                    <a class="star stars0" href="#"></a>
+                                                                    <a href="#" class="btn" target="_blank"><span></span>加入购物车</a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="main" style="float: left; width: 949px; display: block;">
+                                            <div class="area_slide dota_slide f_left in">
+                                                <div class="hd"><a href="javascript:void(0)" class="on"></a></div>
+                                                <div class="bd">
+                                                    <div class="tempWrap" style="overflow:hidden; position:relative; width:467px"><ul class="cf" style="width: 467px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: 0px;">
+                                                        
+                                                            <li style="float: left; width: 467px;"><a href="#" target="_blank"><img src="images/5e9882d3f54544509cc36b6ac414a85f.jpg"></a></li>
+                                                    </ul></div>
+                                                </div>
+                                            </div>
+                                            <div class="product-item list in">
+                                                <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>27</font></a>
+                                                <a href="#" target="_blank"><img src="images/b56cb59f-b862-4caf-a5af-51ad539bba6d_160.jpg" alt="DOTA2-风行者 figma手办" title="DOTA2-风行者 figma手办"></a>
+                                                <p class="name ellipsis" title="DOTA2-风行者 figma手办" style="word-wrap: break-word; word-break: break-all;">DOTA2-风行者 figma手办</p>
+                                                <p class="price">¥488.00
+                                                </p>
+                                                <div class="add">
+                                                    <a class="star stars4" href="#"></a>
+                                                                    <a href="#" class="btn" target="_blank" data-pid="345"><span></span>加入购物车</a>
+
+                                                </div>
+                                            </div>
+                                            <div class="product-item list in" style="margin-right:0;">
+                                                <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>21</font></a>
+                                                <a href="#" target="_blank"><img src="images/66d61ecb-955d-4d19-a239-68d01f199f7e_160.jpg" alt="DOTA2-敌法师 figma手办" title="DOTA2-敌法师 figma手办"></a>
+                                                <p class="name ellipsis" title="DOTA2-敌法师 figma手办" style="word-wrap: break-word; word-break: break-all;">DOTA2-敌法师 figma手办</p>
+                                                <p class="price">¥488.00
+                                                </p>
+                                                <div class="add">
+                                                    <a class="star stars4" href="#"></a>
+                                                                    <a href="#" class="btn" target="_blank" data-pid="346"><span></span>加入购物车</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-item list in">
+                                                <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>172</font></a>
+                                                <a href="#" target="_blank"><img src="images/9c937b4a-de48-4eff-b7a6-2283cb490852_160.jpg" alt="粘土人 痛苦女王  TI7周边预售  限时特价" title="粘土人 痛苦女王  TI7周边预售  限时特价"></a>
+                                                <p class="name ellipsis" title="粘土人 痛苦女王  TI7周边预售  限时特价" style="word-wrap: break-word; word-break: break-all;">粘土人 痛苦女王  TI7周边预售  限时特价</p>
+                                                <p class="price">¥298.00
+                                                </p>
+                                                <div class="add">
+                                                    <a class="star stars4" href="#"></a>
+                                                                    <a href="#" class="btn" target="_blank" data-pid="291"><span></span>加入购物车</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-item list in">
+                                                <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>97</font></a>
+                                                <a href="#" target="_blank"><img src="images/15489f54-fba2-47ea-b92e-32b5e232c104_160.jpg" alt="DOTA2-figma 莉娜  TI7手办" title="DOTA2-figma 莉娜  TI7手办"></a>
+                                                <p class="name ellipsis" title="DOTA2-figma 莉娜  TI7手办" style="word-wrap: break-word; word-break: break-all;">DOTA2-figma 莉娜  TI7手办</p>
+                                                <p class="price">¥488.00
+                                                </p>
+                                                <div class="add">
+                                                    <a class="star stars4" href="#"></a>
+                                                                    <a href="#" class="btn" target="_blank" data-pid="290"><span></span>加入购物车</a>
+                                                    
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="main" style="float: left; width: 949px; display: block;">
+                                            <div class="area_slide dota_slide f_left in">
+                                                <div class="hd"><a href="javascript:void(0)" class="on"></a></div>
+                                                <div class="bd">
+                                                    <div class="tempWrap" style="overflow:hidden; position:relative; width:467px"><ul class="cf" style="width: 467px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: 0px;">
+                                                            <li style="float: left; width: 467px;"><a href="#" target="_blank"><img src="images/478b335827ff45d4ba76376074fc0f0d.jpg"></a></li>
+                                                        
+                                                    </ul></div>
+                                                </div>
+                                            </div>
+                                            <div class="product-item list in">
+                                                <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>3</font></a>
+                                                <a href="#" target="_blank"><img src="images/5d951f30-3bec-4af3-b906-27c8b4156f84_160.jpg" alt="DOTA2-TI7  水晶喵女与狸娜 T恤" title="DOTA2-TI7  水晶喵女与狸娜 T恤"></a>
+                                                <p class="name ellipsis" title="DOTA2-TI7  水晶喵女与狸娜 T恤" style="word-wrap: break-word; word-break: break-all;">DOTA2-TI7  水晶喵女与狸娜 T恤</p>
+                                                <p class="price">¥139.00
+                                                    
+                                                </p>
+                                                <div class="add">
+                                                    <a class="star stars2" href="#"></a>
+                                                                    <a href="#" class="btn" target="_blank"><span></span>加入购物车</a>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="product-item list in" style="margin-right:0;">
+                                                <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>29</font></a>
+                                                <a href="#" target="_blank"><img src="images/d553454e-5bd0-4c9a-8c2e-ea2a076988e7_160.jpg" alt="DAC专属T恤" title="DAC专属T恤"></a>
+                                                <p class="name ellipsis" title="DAC专属T恤" style="word-wrap: break-word; word-break: break-all;">DAC专属T恤</p>
+                                                <p class="price">¥139.00
+                                                    
+                                                </p>
+                                                <div class="add">
+                                                    <a class="star stars4" href="#"></a>
+                                                                
+                                                                    <a href="#" class="btn" target="_blank"><span></span>加入购物车</a>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="product-item list in">
+                                                <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>8</font></a>
+                                                <a href="#" target="_blank"><img src="images/6b4fe11b-7249-4056-8025-f31a61b985f1_160.jpg" alt="DOTA2-TI7 幻影刺客纹身  T恤" title="DOTA2-TI7 幻影刺客纹身  T恤"></a>
+                                                <p class="name ellipsis" title="DOTA2-TI7 幻影刺客纹身  T恤" style="word-wrap: break-word; word-break: break-all;">DOTA2-TI7 幻影刺客纹身  T恤</p>
+                                                <p class="price">¥139.00
+                                                </p>
+                                                <div class="add">
+                                                    <a class="star stars5" href="#"></a>
+                                                                    <a href="#" class="btn" target="_blank"><span></span>加入购物车</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-item list in">
+                                                <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>14</font></a>
+                                                <a href="#" target="_blank"><img src="images/ae6176a3-47bb-4398-bb45-36ac2290f45d_160.jpg" alt="DOTA2-TI7 前来收割 T恤" title="DOTA2-TI7 前来收割 T恤"></a>
+                                                <p class="name ellipsis" title="DOTA2-TI7 前来收割 T恤" style="word-wrap: break-word; word-break: break-all;">DOTA2-TI7 前来收割 T恤</p>
+                                                <p class="price">¥139.00
+                                                    
+                                                </p>
+                                                <div class="add">
+                                                    <a class="star stars4" href="#"></a>
+                                                                    <a href="#" class="btn" target="_blank"><span></span>加入购物车</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-item list in">
+                                                <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>9</font></a>
+                                                <a href="#" target="_blank"><img src="images/93945894-d9c6-4f43-91cc-76203c9893d8_160.jpg" alt="DOTA2-TI7 装甲就位 T恤" title="DOTA2-TI7 装甲就位 T恤"></a>
+                                                <p class="name ellipsis" title="DOTA2-TI7 装甲就位 T恤" style="word-wrap: break-word; word-break: break-all;">DOTA2-TI7 装甲就位 T恤</p>
+                                                <p class="price">¥139.00
+                                                    
+                                                </p>
+                                                <div class="add">
+                                                    <a class="star stars3" href="#"></a>
+                                                                    <a href="#" class="btn" target="_blank"><span></span>加入购物车</a>
+
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="main" style="float: left; width: 949px; display: block;">
+                                            <div class="area_slide dota_slide f_left in">
+                                                <div class="hd"><a href="javascript:void(0)" class="on"></a></div>
+                                                <div class="bd">
+                                                    <div class="tempWrap" style="overflow:hidden; position:relative; width:467px"><ul class="cf" style="width: 467px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: 0px;">
+                                                            <li style="float: left; width: 467px;"><a href="#" target="_blank"><img src="images/c550920ee72946238fd7ebee8ac43b56.jpg"></a></li>
+                                                    </ul></div>
+                                                </div>
+                                            </div>
+                                            <div class="product-item list in">
+                                                <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>14</font></a>
+                                                <a href="#" target="_blank"><img src="images/9f709eb4-50de-456a-84cf-ff7f0a79113f_160.jpg" alt="DOTA2-熊战士毛绒" title="DOTA2-熊战士毛绒"></a>
+                                                <p class="name ellipsis" title="DOTA2-熊战士毛绒" style="word-wrap: break-word; word-break: break-all;">DOTA2-熊战士毛绒</p>
+                                                <p class="price">¥280.00
+                                                </p>
+                                                <div class="add">
+                                                    <a class="star stars4" href="#"></a>
+                                                                    <a href="#" class="btn" target="_blank" data-pid="157"><span></span>加入购物车</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-item list in" style="margin-right:0;">
+                                                <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>10</font></a>
+                                                <a href="#" target="_blank"><img src="images/ec8f4873-869b-4e70-bb7d-c284192f70ff_160.jpg" alt="DOTA2-TI7 三灵抱枕" title="DOTA2-TI7 三灵抱枕"></a>
+                                                <p class="name ellipsis" title="DOTA2-TI7 三灵抱枕" style="word-wrap: break-word; word-break: break-all;">DOTA2-TI7 三灵抱枕</p>
+                                                <p class="price">¥168.00
+                                                    
+                                                </p>
+                                                <div class="add">
+                                                    <a class="star stars5" href="#"></a>
+                                                                    <a href="#" class="btn" target="_blank"><span></span>加入购物车</a>
+
+                                                </div>
+                                            </div>
+                                            <div class="product-item list in">
+                                                <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>4</font></a>
+                                                <a href="#" target="_blank"><img src="images/86dd7a0c-75db-466a-97fe-22c33ac0cd3d_160.jpg" alt="DOTA2-TI7 剑圣抱枕" title="DOTA2-TI7 剑圣抱枕"></a>
+                                                <p class="name ellipsis" title="DOTA2-TI7 剑圣抱枕" style="word-wrap: break-word; word-break: break-all;">DOTA2-TI7 剑圣抱枕</p>
+                                                <p class="price">¥168.00
+                                                </p>
+                                                <div class="add">
+                                                    <a class="star stars4" href="#"></a>
+                                                                    <a href="#" class="btn" target="_blank"><span></span>加入购物车</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-item list in">
+                                                <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>6</font></a>
+                                                <a href="#" target="_blank"><img src="images/8bbb9b4b-1279-4a7e-b348-b1906e2eb55e_160.jpg" alt="DOTA2-TI7 裂魂人毛绒玩偶" title="DOTA2-TI7 裂魂人毛绒玩偶"></a>
+                                                <p class="name ellipsis" title="DOTA2-TI7 裂魂人毛绒玩偶" style="word-wrap: break-word; word-break: break-all;">DOTA2-TI7 裂魂人毛绒玩偶</p>
+                                                <p class="price">¥298.00
+                                                </p>
+                                                <div class="add">
+                                                    <a class="star stars3" href="#"></a>
+                                                                    <a href="#" class="btn" target="_blank" data-pid="367"><span></span>加入购物车</a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="main" style="float: left; width: 949px; display: block;">
+                                        
+                                            <div class="area_slide dota_slide f_left in">
+                                                <div class="hd"><a href="javascript:void(0)" class="on"></a></div>
+                                                <div class="bd">
+                                                    <div class="tempWrap" style="overflow:hidden; position:relative; width:467px"><ul class="cf" style="width: 467px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: 0px;">
+                                                            <li style="float: left; width: 467px;"><a href="#" target="_blank"><img src="images/4ddb173574be482c9a492b04f3a3ec27.jpg"></a></li>
+                                                    </ul></div>
+                                                </div>
+                                            </div>
+                                            <div class="product-item list in">
+                                                <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>1</font></a>
+                                                <a href="#" target="_blank"><img src="images/81cddabb054a439cb0d79076322b9128_160.jpg" alt="DOTA2 - 雨伞 麦尔朗恩的深渊漩涡" title="DOTA2 - 雨伞 麦尔朗恩的深渊漩涡"></a>
+                                                <p class="name ellipsis" title="DOTA2 - 雨伞 麦尔朗恩的深渊漩涡" style="word-wrap: break-word; word-break: break-all;">DOTA2 - 雨伞 麦尔朗恩的深渊漩涡</p>
+                                                <p class="price">¥149.00
+                                                </p>
+                                                <div class="add">
+                                                    <a class="star stars5" href="#"></a>
+                                                                    <a href="#" class="btn" target="_blank" data-pid="501"><span></span>加入购物车</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-item list in" style="margin-right:0;">
+                                                <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>2</font></a>
+                                                <a href="#" target="_blank"><img src="images/f97b0b93-6859-4895-81e6-9ff55008c7bc_160.jpg" alt="DOTA2-屠夫鼠标垫" title="DOTA2-屠夫鼠标垫"></a>
+                                                <p class="name ellipsis" title="DOTA2-屠夫鼠标垫" style="word-wrap: break-word; word-break: break-all;">DOTA2-屠夫鼠标垫</p>
+                                                <p class="price">¥240.00
+                                                    
+                                                </p>
+                                                <div class="add">
+                                                    <a class="star stars0" href="#"></a>
+                                                                    <a href="#" class="btn" target="_blank" data-pid="154"><span></span>加入购物车</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-item list in">
+                                                <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>18</font></a>
+                                                <a href="#" target="_blank"><img src="images/ad11e253-7e3c-4b0b-97c0-52269ff25949_160.jpg" alt="DOTA2-TI7 主题背包" title="DOTA2-TI7 主题背包"></a>
+                                                <p class="name ellipsis" title="DOTA2-TI7 主题背包" style="word-wrap: break-word; word-break: break-all;">DOTA2-TI7 主题背包</p>
+                                                <p class="price">¥428.00
+                                                    
+                                                </p>
+                                                <div class="add">
+                                                    <a class="star stars5" href="#"></a>
+                                                                    <a href="#" class="btn" target="_blank" data-pid="364"><span></span>加入购物车</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-item list in">
+                                                <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>12</font></a>
+                                                <a href="#" target="_blank"><img src="images/0d8552cd-e035-4526-b70f-d0fdeb685c1b_160.jpg" alt="DOTA2- TI7 选手服" title="DOTA2- TI7 选手服"></a>
+                                                <p class="name ellipsis" title="DOTA2- TI7 选手服" style="word-wrap: break-word; word-break: break-all;">DOTA2- TI7 选手服</p>
+                                                <p class="price">¥398.00
+                                                    
+                                                </p>
+                                                <div class="add">
+                                                    <a class="star stars4" href="#"></a>
+                                                                    <a href="#" class="btn" target="_blank"><span></span>加入购物车</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-item list in">
+                                                
+                                                        <p class="identity discount"><span>88</span>折</p>
+
+                                                <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>5</font></a>
+                                                <a href="#" target="_blank"><img src="images/6313fb95261445499bd324c4e66647f2_160.jpg" alt="DOTA2 - 全英雄选择 手机壳" title="DOTA2 - 全英雄选择 手机壳"></a>
+                                                <p class="name ellipsis" title="DOTA2 - 全英雄选择 手机壳" style="word-wrap: break-word; word-break: break-all;">DOTA2 - 全英雄选择 手机壳</p>
+                                                <p class="price">¥88.00
+                                                    
+                                                        <s>¥99.00</s>
+                                                    
+                                                </p>
+                                                <div class="add">
+                                                    <a class="star stars4" href="#"></a>
+                                                    
+                                                                    <a href="#" class="btn" target="_blank"><span></span>加入购物车</a>
+                                                                
+
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="product-item list in" style="margin-right:0;">
+                                                
+                                                <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>0</font></a>
+                                                <a href="#" target="_blank"><img src="images/a943e7413e3341ba8bde241a7176f70c_160.jpg" alt="DOTA2 - 英雄至宝 金属徽章 NO.2" title="DOTA2 - 英雄至宝 金属徽章 NO.2"></a>
+                                                <p class="name ellipsis" title="DOTA2 - 英雄至宝 金属徽章 NO.2" style="word-wrap: break-word; word-break: break-all;">DOTA2 - 英雄至宝 金属徽章 NO.2</p>
+                                                <p class="price">¥199.00
+                                                    
+                                                </p>
+                                                <div class="add">
+                                                    <a class="star stars0" href="#"></a>
+                                                                    <a href="#" class="btn" target="_blank" data-pid="445"><span></span>加入购物车</a>
+
+                                                </div>
+                                            </div>
+                                    </div>
+                                
+                            </div></div>
+                        </div>
+                    </div>
+                </div>
+<!--电竞外设专区-->
+                <div class="area wm_area">
+                    <div class="wrap">
+                        <div class="title_main">
+                            <p class="f_left"><span class="icon"><img src="images/ac2ede71012d48dc953ac3a52ac7ad8c.jpg"></span>电竞外设专区</p>
+                            <a href="#" target="_blank" class="f_right more">更多<span></span></a>
+                        </div>
+                        <div class="cf">
+                            <a href="#" target="_blank" class="f_left ad in"><img src="images/8b3cd23eae73440aaa030fd6bdf11e56.jpg" width="226" height="614" alt=""></a>
+                                <div class="product-item list in">
+                                            <p class="identity discount"><span>96</span>折</p>
+                                    <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>4</font></a>
+                                    <a href="#" target="_blank"><img src="images/b19d1b26b1134dab954e63ac927c38e3_160.jpg" alt="steelseries/赛睿 Arctis 7寒冰7 头戴式无线游戏耳机麦" title="steelseries/赛睿 Arctis 7寒冰7 头戴式无线游戏耳机麦"></a>
+                                    <p class="name ellipsis" title="steelseries/赛睿 Arctis 7寒冰7 头戴式无线游戏耳机麦" style="word-wrap: break-word; word-break: break-all;">steelseries/赛睿 Arctis 7寒冰7 头戴式无线游戏耳机麦</p>
+                                    <p class="price">¥1349.00
+                                            <s>¥1399.00</s>
+                                    </p>
+                                    <div class="add">
+                                        <a class="star stars0" href="#"></a>
+
+                                                        <a href="#" class="btn" target="_blank" data-pid="463"><span></span>加入购物车</a>
+                                    </div>
+                                </div>
+                                <div class="product-item list in">
+                                            <p class="identity discount"><span>93</span>折</p>
+                                    <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>1</font></a>
+                                    <a href="#" target="_blank"><img src="images/e280710b9faa4432b4e7f951103b5c80_160.jpg" alt="teelseries/赛睿 Arctis Pro 寒冰 Pro 头戴式 游戏耳机耳麦" title="teelseries/赛睿 Arctis Pro 寒冰 Pro 头戴式 游戏耳机耳麦"></a>
+                                    <p class="name ellipsis" title="teelseries/赛睿 Arctis Pro 寒冰 Pro 头戴式 游戏耳机耳麦" style="word-wrap: break-word; word-break: break-all;">teelseries/赛睿 Arctis Pro 寒冰 Pro 头戴式 游戏耳机耳麦</p>
+                                    <p class="price">¥1499.00
+                                            <s>¥1599.00</s>
+                                    </p>
+                                    <div class="add">
+                                        <a class="star stars0" href="#"></a>
+                                                        <a href="#" class="btn" target="_blank" data-pid="486"><span></span>加入购物车</a>
+                                    </div>
+                                </div>
+                                <div class="product-item list in">
+                                    <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>1</font></a>
+                                    <a href="#" target="_blank"><img src="images/d4dca05806744e368b07e1bd45041933_160.jpg" alt="赛睿 rival 600 有线游戏鼠标rgb宏编程双传感防滑侧裙配重" title="赛睿 rival 600 有线游戏鼠标rgb宏编程双传感防滑侧裙配重"></a>
+                                    <p class="name ellipsis" title="赛睿 rival 600 有线游戏鼠标rgb宏编程双传感防滑侧裙配重" style="word-wrap: break-word; word-break: break-all;">赛睿 rival 600 有线游戏鼠标rgb宏编程双传感防滑侧裙配重</p>
+                                    <p class="price">¥659.00
+                                    </p>
+                                    <div class="add">
+                                        <a class="star stars0" href="#"></a>
+                                                        <a href="#" class="btn" target="_blank" data-pid="485"><span></span>加入购物车</a>
+                                    </div>
+                                </div>
+                                <div class="product-item list in" style="margin-right:0;">
+                                    <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>4</font></a>
+                                    <a href="#" target="_blank"><img src="images/1f081573f16f4c89af51b29931acec93_160.jpg" alt="SteelSeries赛睿 Rival 700 有线游戏鼠标rgb幻彩呼吸灯" title="SteelSeries赛睿 Rival 700 有线游戏鼠标rgb幻彩呼吸灯"></a>
+                                    <p class="name ellipsis" title="SteelSeries赛睿 Rival 700 有线游戏鼠标rgb幻彩呼吸灯" style="word-wrap: break-word; word-break: break-all;">SteelSeries赛睿 Rival 700 有线游戏鼠标rgb幻彩呼吸灯</p>
+                                    <p class="price">¥699.00
+                                        
+                                    </p>
+                                    <div class="add">
+                                        <a class="star stars0" href="#"></a>
+                                                        <a href="#" class="btn" target="_blank" data-pid="460"><span></span>加入购物车</a>
+                                                    
+                                    </div>
+                                </div>
+                                <div class="product-item list in">
+                                            <p class="identity discount"><span>66</span>折</p>
+
+                                    <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>2</font></a>
+                                    <a href="#" target="_blank"><img src="images/da24ca0d6a0843d086f8c7c79e125975_160.jpg" alt="SteelSeries赛睿 rival 100 光学有线电竞游戏鼠标 RGB呼吸灯" title="SteelSeries赛睿 rival 100 光学有线电竞游戏鼠标 RGB呼吸灯"></a>
+                                    <p class="name ellipsis" title="SteelSeries赛睿 rival 100 光学有线电竞游戏鼠标 RGB呼吸灯" style="word-wrap: break-word; word-break: break-all;">SteelSeries赛睿 rival 100 光学有线电竞游戏鼠标 RGB呼吸灯</p>
+                                    <p class="price">¥199.00
+                                            <s>¥299.00</s>
+                                    </p>
+                                    <div class="add">
+                                        <a class="star stars0" href="#"></a>
+                                                        <a href="#" class="btn" target="_blank"><span></span>加入购物车</a>
+                                    </div>
+                                </div>
+                                <div class="product-item list in">
+                                    <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>1</font></a>
+                                    <a href="#" target="_blank"><img src="images/15b0aefece3543b8be54b011ad64b5f9_160.jpg" alt="赛睿 Rival 300s 有线RGB游戏鼠标  csgo" title="赛睿 Rival 300s 有线RGB游戏鼠标  csgo"></a>
+                                    <p class="name ellipsis" title="赛睿 Rival 300s 有线RGB游戏鼠标  csgo" style="word-wrap: break-word; word-break: break-all;">赛睿 Rival 300s 有线RGB游戏鼠标  csgo</p>
+                                    <p class="price">¥319.00
+                                        
+                                    </p>
+                                    <div class="add">
+                                        <a class="star stars0" href="#"></a>
+                                        
+                                                        <a href="#" class="btn" target="_blank" data-pid="459"><span></span>加入购物车</a>
+
+                                    </div>
+                                </div>
+                                <div class="product-item list in">
+                                            <p class="identity discount"><span>96</span>折</p>
+                                    <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>3</font></a>
+                                    <a href="#" target="_blank"><img src="images/e1dde6d7d1e849d7b735a5436b1e5638_160.jpg" alt="赛睿 Apex M500 专业游戏背光机械键盘有线104cherry樱桃红轴青轴" title="赛睿 Apex M500 专业游戏背光机械键盘有线104cherry樱桃红轴青轴"></a>
+                                    <p class="name ellipsis is-truncated" title="赛睿 Apex M500 专业游戏背光机械键盘有线104cherry樱桃红轴青轴" style="word-wrap: break-word; word-break: break-all;">赛睿 Apex M500 专业游戏背光机械键盘有线104cherry樱... </p>
+                                    <p class="price">¥819.00
+                                        
+                                            <s>¥849.00</s>
+                                        
+                                    </p>
+                                    <div class="add">
+                                        <a class="star stars0" href="#"></a>
+                                        
+                                                        <a href="#" class="btn" target="_blank"><span></span>加入购物车</a>
+
+                                    </div>
+                                </div>
+                            
+                                <div class="product-item list in" style="margin-right:0;">
+
+                                            <p class="identity discount"><span>96</span>折</p>
+                                        
+                                    <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>2</font></a>
+                                    <a href="#" target="_blank"><img src="images/321e90c6749c4ee2806dc475df3a7002_160.jpg" alt="steelseries/赛睿 Arctis 3寒冰3 RGB游戏耳机7.1" title="steelseries/赛睿 Arctis 3寒冰3 RGB游戏耳机7.1"></a>
+                                    <p class="name ellipsis" title="steelseries/赛睿 Arctis 3寒冰3 RGB游戏耳机7.1" style="word-wrap: break-word; word-break: break-all;">steelseries/赛睿 Arctis 3寒冰3 RGB游戏耳机7.1</p>
+                                    <p class="price">¥629.00
+                                        
+                                            <s>¥649.00</s>
+                                        
+                                    </p>
+                                    <div class="add">
+                                        <a class="star stars0" href="#"></a>
+                                                        <a href="#" class="btn" target="_blank"><span></span>加入购物车</a>
+
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+<!--完美世界游戏周边-->
+                <div class="area wm_area">
+                    <div class="wrap">
+                        <div class="title_main">
+                            <p class="f_left"><span class="icon"><img src="images/34074317-e65b-486d-acb4-d99972501b63.jpg"></span>完美世界游戏周边</p>
+                            <a href="#" target="_blank" class="f_right more">更多<span></span></a>
+                        </div>
+                        <div class="cf">
+                            <a href="#" target="_blank" class="f_left ad in"><img src="images/c158174c-0e9d-4c92-80c4-e624e20034de.jpg" width="226" height="614" alt=""></a>
+                                <div class="area_slide dota_slide f_left in">
+                                    <div class="hd"><a href="javascript:void(0)" class="on"></a></div>
+                                    <div class="bd">
+                                        <div class="tempWrap" style="overflow:hidden; position:relative; width:467px"><ul class="cf" style="width: 467px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: 0px;">
+                                                <li style="float: left; width: 467px;"><a href="#" target="_blank"><img src="images/b24a4280-eb2a-4cc6-ba6e-97a97dde6c9c.jpg"></a></li>
+                                        </ul></div>
+                                    </div>
+                                </div>
+                                <div class="product-item list in">
+                                            <p class="identity discount"><span>93</span>折</p>
+                                    <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>1</font></a>
+                                    <a href="#" target="_blank"><img src="images/49c0b5109e4f407587f8ef9d4ad30e98_160.jpg" alt="梦间集-超大桌垫" title="梦间集-超大桌垫"></a>
+                                    <p class="name ellipsis" title="梦间集-超大桌垫" style="word-wrap: break-word; word-break: break-all;">梦间集-超大桌垫</p>
+                                    <p class="price">¥75.00
+                                        
+                                            <s>¥80.00</s>
+                                        
+                                    </p>
+                                    <div class="add">
+                                        <a class="star stars0" href="#"></a>
+                                                        <a href="#" class="btn" target="_blank"><span></span>加入购物车</a>
+                                    </div>
+                                </div>
+                                <div class="product-item list in" style="margin-right:0;">
+                                    <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>4</font></a>
+                                    <a href="#" target="_blank"><img src="images/471ed632aa4c43e681daa25637413d6e_160.jpg" alt="诛仙手游-loz灵猴模型玩具" title="诛仙手游-loz灵猴模型玩具"></a>
+                                    <p class="name ellipsis" title="诛仙手游-loz灵猴模型玩具" style="word-wrap: break-word; word-break: break-all;">诛仙手游-loz灵猴模型玩具</p>
+                                    <p class="price">¥69.00
+                                        
+                                    </p>
+                                    <div class="add">
+                                        <a class="star stars0" href="#"></a>
+                                                        <a href="#" class="btn" target="_blank"><span></span>加入购物车</a>
+                                    </div>
+                                </div>
+                                <div class="product-item list in">
+                                            <p class="identity discount"><span>75</span>折</p>
+                                    <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>1</font></a>
+                                    <a href="#" target="_blank"><img src="images/cc88ffc2b6ae409ba67d7d2d7fb31d58_160.jpg" alt="梦间集-角色文件夹" title="梦间集-角色文件夹"></a>
+                                    <p class="name ellipsis" title="梦间集-角色文件夹" style="word-wrap: break-word; word-break: break-all;">梦间集-角色文件夹</p>
+                                    <p class="price">¥15.00
+                                        
+                                            <s>¥20.00</s>
+                                        
+                                    </p>
+                                    <div class="add">
+                                        <a class="star stars0" href="#"></a>
+                                                        <a href="#" class="btn" target="_blank"><span></span>加入购物车</a>
+                                    </div>
+                                </div>
+                            
+                                <div class="product-item list in">
+                                    <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>9</font></a>
+                                    <a href="#" target="_blank"><img src="images/fc902dbb-ce45-4c7a-9580-ffd635b3dd11_160.jpg" alt="诛仙3-古风戏莲杯  诛仙10周年纪念版" title="诛仙3-古风戏莲杯  诛仙10周年纪念版"></a>
+                                    <p class="name ellipsis" title="诛仙3-古风戏莲杯  诛仙10周年纪念版" style="word-wrap: break-word; word-break: break-all;">诛仙3-古风戏莲杯  诛仙10周年纪念版</p>
+                                    <p class="price">¥99.00
+                                        
+                                    </p>
+                                    <div class="add">
+                                        <a class="star stars5" href="#"></a>
+                                                        <a href="#" class="btn" target="_blank"><span></span>加入购物车</a>
+                                    </div>
+                                </div>
+                                <div class="product-item list in">
+                                            <p class="identity discount"><span>45</span>折</p>
+                                    <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>1</font></a>
+                                    <a href="#" target="_blank"><img src="images/f746cf1af69741098062721603b34a0a_160.jpg" alt="梦间集-半身抱枕套" title="梦间集-半身抱枕套"></a>
+                                    <p class="name ellipsis" title="梦间集-半身抱枕套" style="word-wrap: break-word; word-break: break-all;">梦间集-半身抱枕套</p>
+                                    <p class="price">¥90.00
+                                        
+                                            <s>¥200.00</s>
+                                        
+                                    </p>
+                                    <div class="add">
+                                        <a class="star stars0" href="#"></a>
+                                                        <a href="#" class="btn" target="_blank"><span></span>加入购物车</a>
+                                    </div>
+                                </div>
+                            
+                                <div class="product-item list in" style="margin-right:0;">
+                                    <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>0</font></a>
+                                    <a href="#" target="_blank"><img src="images/6df090608ab04f5db336e2b320e363d7_160.jpg" alt="梦间集——金属挂件" title="梦间集——金属挂件"></a>
+                                    <p class="name ellipsis" title="梦间集——金属挂件" style="word-wrap: break-word; word-break: break-all;">梦间集——金属挂件</p>
+                                    <p class="price">¥120.00
+                                        
+                                    </p>
+                                    <div class="add">
+                                        <a class="star stars0" href="#"></a>
+                                                        <a href="#" class="btn" target="_blank"><span></span>加入购物车</a>
+                                                    
+
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+<!--CSGO正版周边          -->
+                <div class="area wm_area">
+                    <div class="wrap">
+                        <div class="title_main">
+                            <p class="f_left"><span class="icon"><img src="images/48b55125-b9ab-41bf-a2cc-fa368dc368d6.jpg"></span>CSGO正版周边</p>
+                            <a href="#" target="_blank" class="f_right more">更多<span></span></a>
+                        </div>
+                        <div class="cf">
+                            <a href="#" target="_blank" class="f_left ad in"><img src="images/7a580e48-595c-4f11-847c-f81e95219bba.jpg" width="226" height="614" alt=""></a>
+                                <div class="product-item list in">
+                                            <p class="identity discount"><span>84</span>折</p>
+                                    <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>3</font></a>
+                                    <a href="#" target="_blank"><img src="images/943e779f267746f3b102837bb94b4f69_160.jpg" alt="CS:GO 全球攻势鼠标垫" title="CS:GO 全球攻势鼠标垫"></a>
+                                    <p class="name ellipsis" title="CS:GO 全球攻势鼠标垫" style="word-wrap: break-word; word-break: break-all;">CS:GO 全球攻势鼠标垫</p>
+                                    <p class="price">¥219.00
+                                            <s>¥259.00</s>
+                                    </p>
+                                    <div class="add">
+                                        <a class="star stars0" href="#"></a>
+                                                        <a href="#" class="btn" target="_blank" data-pid="439"><span></span>加入购物车</a>
+                                    </div>
+                                </div>
+                                <div class="product-item list in">
+                                    <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>4</font></a>
+                                    <a href="#" target="_blank"><img src="images/7a2cbff61415496496d33b66a63d7651_160.jpg" alt="CS:GO 爪子刀 T恤" title="CS:GO 爪子刀 T恤"></a>
+                                    <p class="name ellipsis" title="CS:GO 爪子刀 T恤" style="word-wrap: break-word; word-break: break-all;">CS:GO 爪子刀 T恤</p>
+                                    <p class="price">¥199.00
+                                    </p>
+                                    <div class="add">
+                                        <a class="star stars0" href="#"></a>
+                                                        <a href="#" class="btn" target="_blank"><span></span>加入购物车</a>
+                                    </div>
+                                </div>
+                                <div class="product-item list in">
+                                    <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>3</font></a>
+                                    <a href="#" target="_blank"><img src="images/83176d285e1849d9ae15549e9154adb0_160.jpg" alt="CS:GO 电竞 Logo T恤" title="CS:GO 电竞 Logo T恤"></a>
+                                    <p class="name ellipsis" title="CS:GO 电竞 Logo T恤" style="word-wrap: break-word; word-break: break-all;">CS:GO 电竞 Logo T恤</p>
+                                    <p class="price">¥199.00
+                                        
+                                    </p>
+                                    <div class="add">
+                                        <a class="star stars0" href="#"></a>
+                                                        <a href="#" class="btn" target="_blank"><span></span>加入购物车</a>
+                                    </div>
+                                </div>
+                                <div class="product-item list in" style="margin-right:0;">
+                                            <p class="identity discount"><span>83</span>折</p>
+                                    <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>3</font></a>
+                                    <a href="#" target="_blank"><img src="images/fbfade036c634cb3857ce60134f2bb63_160.jpg" alt="CS:GO Logo 针织帽" title="CS:GO Logo 针织帽"></a>
+                                    <p class="name ellipsis" title="CS:GO Logo 针织帽" style="word-wrap: break-word; word-break: break-all;">CS:GO Logo 针织帽</p>
+                                    <p class="price">¥149.00
+                                        
+                                            <s>¥179.00</s>
+                                        
+                                    </p>
+                                    <div class="add">
+                                        <a class="star stars0" href="#"></a>
+                                                        <a href="#" class="btn" target="_blank" data-pid="436"><span></span>加入购物车</a>
+
+                                    </div>
+                                </div>
+                                <div class="product-item list in">
+                                            <p class="identity discount"><span>82</span>折</p>
+                                    <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>3</font></a>
+                                    <a href="#" target="_blank"><img src="images/6e1db378ad16460c817c6d6a6ebd42d1_160.jpg" alt="CS:GO 网络棒球帽" title="CS:GO 网络棒球帽"></a>
+                                    <p class="name ellipsis" title="CS:GO 网络棒球帽" style="word-wrap: break-word; word-break: break-all;">CS:GO 网络棒球帽</p>
+                                    <p class="price">¥239.00
+                                        
+                                            <s>¥289.00</s>
+                                        
+                                    </p>
+                                    <div class="add">
+                                        <a class="star stars0" href="#"></a>
+                                        
+
+                                                        <a href="#" class="btn" target="_blank" data-pid="437"><span></span>加入购物车</a>
+
+                                    </div>
+                                </div>
+                                <div class="product-item list in">
+                                    <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>3</font></a>
+                                    <a href="#" target="_blank"><img src="images/9924ddd2eb74435691096299f9e0352b_160.jpg" alt="CS:GO 全球攻势马克杯" title="CS:GO 全球攻势马克杯"></a>
+                                    <p class="name ellipsis" title="CS:GO 全球攻势马克杯" style="word-wrap: break-word; word-break: break-all;">CS:GO 全球攻势马克杯</p>
+                                    <p class="price">¥129.00
+                                        
+                                    </p>
+                                    <div class="add">
+                                        <a class="star stars0" href="#"></a>
+                                                        <a href="#" class="btn" target="_blank" data-pid="438"><span></span>加入购物车</a>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+<!--姜小虎周边专区         -->
+                <div class="area wm_area">
+                    <div class="wrap">
+                        <div class="title_main">
+                            <p class="f_left"><span class="icon"><img src="images/8794293e-ccd8-46ac-b687-df744f636e0e.jpg"></span>姜小虎周边专区</p>
+                            <a href="#" target="_blank" class="f_right more">更多<span></span></a>
+                        </div>
+                        <div class="cf">
+                            <a href="#" target="_blank" class="f_left ad in"><img src="images/649d1b44-c48a-49da-b200-56840a74e5e9.jpg" width="226" height="614" alt=""></a>
+                                <div class="area_slide dota_slide f_left in">
+                                    <div class="hd"><a href="javascript:void(0)" class="on"></a><a href="javascript:void(0)" class=""></a></div>
+                                    <div class="bd">
+                                        <div class="tempWrap" style="overflow:hidden; position:relative; width:467px"><ul class="cf" style="width: 934px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: 0px;">
+                                                <li style="float: left; width: 467px;"><a href="#" target="_blank"><img src="images/b31b587d-eb0c-4c0f-9e99-bd2185325d08.jpg"></a></li>
+                                                <li style="float: left; width: 467px;"><a href="#" target="_blank"><img src="images/3dd3f796-e688-4ff4-810a-4c146e0a99d4.jpg"></a></li>
+                                        </ul></div>
+                                        <a class="prev" href="javascript:void(0)"><span></span></a>
+                                        <a class="next" href="javascript:void(0)"><span></span></a>
+                                    </div>
+                                </div>
+                                <div class="product-item list in">
+                                            <p class="identity null">售罄</p>
+                                    <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>3</font></a>
+                                    <a href="#" target="_blank"><img src="images/929eaadb-33e3-4ee7-a216-eeb8161ef533_160.jpg" alt="姜小虎-福袋" title="姜小虎-福袋"></a>
+                                    <p class="name ellipsis" title="姜小虎-福袋" style="word-wrap: break-word; word-break: break-all;">姜小虎-福袋</p>
+                                    <p class="price">¥122.00
+                                        
+                                    </p>
+                                    <div class="add">
+                                        <a class="star stars5" href="#"></a>
+                                                        <a href="#" class="btn" target="_blank"><span></span>加入购物车</a>
+                                    </div>
+                                </div>
+                                <div class="product-item list in" style="margin-right:0;">
+                                            <p class="identity null">售罄</p>
+                                    <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>3</font></a>
+                                    <a href="#" target="_blank"><img src="images/3af83884-df63-4931-a936-e0b78cc60a1f_160.jpg" alt="姜小虎-背包" title="姜小虎-背包"></a>
+                                    <p class="name ellipsis" title="姜小虎-背包" style="word-wrap: break-word; word-break: break-all;">姜小虎-背包</p>
+                                    <p class="price">¥99.00
+                                        
+                                    </p>
+                                    <div class="add">
+                                        <a class="star stars0" href="#"></a>
+                                                        <a href="#" class="btn" target="_blank" data-pid="247"><span></span>加入购物车</a>
+
+                                    </div>
+                                </div>
+                                <div class="product-item list in">
+                                    <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>4</font></a>
+                                    <a href="#" target="_blank"><img src="images/98ed7e7e-3a81-496c-9318-0d10b3665c69_160.jpg" alt="姜小虎-货郎小虎手办" title="姜小虎-货郎小虎手办"></a>
+                                    <p class="name ellipsis" title="姜小虎-货郎小虎手办" style="word-wrap: break-word; word-break: break-all;">姜小虎-货郎小虎手办</p>
+                                    <p class="price">¥288.00
+                                        
+                                    </p>
+                                    <div class="add">
+                                        <a class="star stars0" href="#"></a>
+                                                        <a href="#" class="btn" target="_blank" data-pid="241"><span></span>加入购物车</a>
+                                    </div>
+                                </div>
+                                <div class="product-item list in">
+                                            <p class="identity null">售罄</p>
+                                    <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>5</font></a>
+                                    <a href="#" target="_blank"><img src="images/9b835e77-5e58-4573-b26c-5a0a9fab83f6_160.jpg" alt="姜小虎-多表情手捂" title="姜小虎-多表情手捂"></a>
+                                    <p class="name ellipsis" title="姜小虎-多表情手捂" style="word-wrap: break-word; word-break: break-all;">姜小虎-多表情手捂</p>
+                                    <p class="price">¥68.00
+                                        
+                                    </p>
+                                    <div class="add">
+                                        <a class="star stars0" href="#"></a>
+                                                        <a href="#" class="btn" target="_blank"><span></span>加入购物车</a>
+
+                                    </div>
+                                </div>
+                                <div class="product-item list in">
+                                    <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>3</font></a>
+                                    <a href="#" target="_blank"><img src="images/21c83baf-1e43-4d89-b5fd-fd69226719ff_160.jpg" alt="姜小虎-表情口罩" title="姜小虎-表情口罩"></a>
+                                    <p class="name ellipsis" title="姜小虎-表情口罩" style="word-wrap: break-word; word-break: break-all;">姜小虎-表情口罩</p>
+                                    <p class="price">¥12.00
+                                        
+                                    </p>
+                                    <div class="add">
+                                        <a class="star stars0" href="#"></a>
+                                                        <a href="#" class="btn" target="_blank"><span></span>加入购物车</a>
+                                    </div>
+                                </div>
+                            
+                                <div class="product-item list in" style="margin-right:0;">
+                                            <p class="identity null">售罄</p>
+                                    <a href="javascript:void(0)" data-pid=".*" class="like "><span></span><font>3</font></a>
+                                    <a href="#" target="_blank"><img src="images/81495194-07cd-4cfc-b16d-fb0141facf39_160.jpg" alt="姜小虎-移动电源" title="姜小虎-移动电源"></a>
+                                    <p class="name ellipsis" title="姜小虎-移动电源" style="word-wrap: break-word; word-break: break-all;">姜小虎-移动电源</p>
+                                    <p class="price">¥118.00
+                                        
+                                    </p>
+                                    <div class="add">
+                                        <a class="star stars5" href="#"></a>
+                                                        <a href="#" class="btn" target="_blank" data-pid="240"><span></span>加入购物车</a>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+    <!-- 玩家热评 -->
+    <div class="hot_comment">
+        <div class="wrap">
+            <div class="title_main">
+                <p class="f_left"><span class="icon"><img src="images/hot_review.png"></span>玩家热评</p>
+            </div>
+            <ul class="cf">
+                    <li class="in">
+                        <a href="#" target="_blank">
+                            <img src="images/b0406e02fd3443709be6e0abbb898a6f_130.jpg" alt="CSGO-ZOWIE特别版鼠标" title="CSGO-ZOWIE特别版鼠标" class="f_left">
+                            <div class="f_left info">
+                                <div class="text ellipsis is-truncated" title="玩CS12年了！真的好爱cs！从接触cs到现在，我已到了不能没有cs的地步！今年，csgo国服公测！限量版鼠标我买到了！我爱大家！我爱csgo，我爱你" style="word-wrap: break-word; word-break: break-all;">玩CS12年了！真的好爱cs！从接触cs到现在，我已到了不能没有cs的地步！今年，csgo国服公测！限量版鼠标我买到了！我爱大家！... </div>
+                                <p class="from"><span></span>来自于<font>ca****@vip.qq.com</font></p>
+                                <p class="name ellipsis is-truncated" title="CSGO-ZOWIE特别版鼠标" style="word-wrap: break-word; word-break: break-all;">CSGO-ZOWIE特... <span class="suffix" style="display: inline;">¥479.00</span></p>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="in">
+                        <a href="#" target="_blank">
+                            <img src="images/b0406e02fd3443709be6e0abbb898a6f_130.jpg" alt="CSGO-ZOWIE特别版鼠标" title="CSGO-ZOWIE特别版鼠标" class="f_left">
+                            <div class="f_left info">
+                                <div class="text ellipsis" title="好用的一批" style="word-wrap: break-word; word-break: break-all;">好用的一批</div>
+                                <p class="from"><span></span>来自于<font>135****2930</font></p>
+                                <p class="name ellipsis is-truncated" title="CSGO-ZOWIE特别版鼠标" style="word-wrap: break-word; word-break: break-all;">CSGO-ZOWIE特... <span class="suffix" style="display: inline;">¥479.00</span></p>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="in" style="margin-right: 0">
+                        <a href="#" target="_blank">
+                            <img src="images/b9a54707-e017-476d-b903-65f6482d3f3c_130.jpg" alt="DOTA2-炼金术士帽子" title="DOTA2-炼金术士帽子" class="f_left">
+                            <div class="f_left info">
+                                <div class="text ellipsis" title="棒棒哒~" style="word-wrap: break-word; word-break: break-all;">棒棒哒~</div>
+                                <p class="from"><span></span>来自于<font>158****1506</font></p>
+                                <p class="name ellipsis is-truncated" title="DOTA2-炼金术士帽子" style="word-wrap: break-word; word-break: break-all;">DOTA2-炼金术... <span class="suffix" style="display: inline;">¥329.00</span></p>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="in">
+                        <a href="#" target="_blank">
+                            <img src="images/b469dc7c-c4a0-478a-b029-6047b703c770_130.jpg" alt="DOTA2-TI6 领带" title="DOTA2-TI6 领带" class="f_left">
+                            <div class="f_left info">
+                                <div class="text ellipsis" title="666666" style="word-wrap: break-word; word-break: break-all;">666666</div>
+                                <p class="from"><span></span>来自于<font>158****1506</font></p>
+                                <p class="name ellipsis" title="DOTA2-TI6 领带" style="word-wrap: break-word; word-break: break-all;">DOTA2-TI6 领带<span class="suffix">¥149.00</span></p>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="in">
+                        <a href="#" target="_blank">
+                            <img src="images/37ac50c7-71d6-4185-8d43-f3101b876303_130.jpg" alt="DOTA2-潮汐猎人 马克杯" title="DOTA2-潮汐猎人 马克杯" class="f_left">
+                            <div class="f_left info">
+                                <div class="text ellipsis" title="杯子很大很沉 出乎意料的好" style="word-wrap: break-word; word-break: break-all;">杯子很大很沉 出乎意料的好</div>
+                                <p class="from"><span></span>来自于<font>so****@sina.com</font></p>
+                                <p class="name ellipsis is-truncated" title="DOTA2-潮汐猎人 马克杯" style="word-wrap: break-word; word-break: break-all;">DOTA2-潮汐猎... <span class="suffix" style="display: inline;">¥188.00</span></p>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="in" style="margin-right: 0">
+                        <a href="#" target="_blank">
+                            <img src="images/5f426f4a-b785-4c1e-a1a5-40122384d645_130.jpg" alt="DOTA2-TI7 主题背包" title="DOTA2-TI7 主题背包" class="f_left">
+                            <div class="f_left info">
+                                <div class="text ellipsis" title="就是发货太慢，但的确是物有所值，和图片相似度百分之九十五吧。就是快递包装不好。给五星鼓励一下" style="word-wrap: break-word; word-break: break-all;">就是发货太慢，但的确是物有所值，和图片相似度百分之九十五吧。就是快递包装不好。给五星鼓励一下</div>
+                                <p class="from"><span></span>来自于<font>60****@qq.com</font></p>
+                                <p class="name ellipsis is-truncated" title="DOTA2-TI7 主题背包" style="word-wrap: break-word; word-break: break-all;">DOTA2-TI7 主... <span class="suffix" style="display: inline;">¥428.00</span></p>
+                            </div>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+<!-- about -->
+<div class="about">
+    <div class="wrap">
+        <ul class="cf">
+            <li class="goods"><span></span>正品保证</li>
+            <li class="shopping"><span></span>轻松购物</li>
+            <li class="logistics"><span></span>快速配送</li>
+            <li class="return"><span></span>无忧退换</li>
+        </ul>
+        <div class="cf link">
+            <dl>
+                <dt>购物指南</dt>
+                <dd><a href="#" target="_blank">常见问题</a></dd>
+                <dd><a href="#" target="_blank" class="needLogin">订单状态</a></dd>
+                <dd><a href="#" target="_blank">购物流程</a></dd>
+                <dd><a href="#" target="_blank">支付方式</a></dd>
+            </dl>
+            <dl>
+                <dt>配送方式</dt>
+                <dd><a href="#" target="_blank">配送范围</a></dd>
+                <dd><a href="#" target="_blank">快递费用</a></dd>
+            </dl>
+            <dl>
+                <dt>售后服务</dt>
+                <dd><a href="#" target="_blank">退换货流程</a></dd>
+                <dd><a href="#" target="_blank">退换货政策</a></dd>
+                <dd><a href="#" target="_blank">服务政策</a></dd>
+            </dl>
+            <dl>
+                <dt>关注我们</dt>
+                <dd><a href="#" target="_blank">公司官网</a></dd>
+                <dd><a href="#" target="_blank">官方微信</a></dd>
+                <dd>
+                    <a href="#" target="_blank">商务合作</a>
+                    <div class="tip">
+                        <i></i>
+                        <p>联系人：张女士</p>
+                        <p>邮箱：<span>zhangchenrui@pwrd.com</span></p>
+                        <p>联系电话：<span>010-57805531</span></p>
+                    </div>
+                </dd>
+            </dl>
+            <div class="f_right contact">
+                <p class="tel">028-68723699</p>
+                <p class="time">周一至周日 9:00-22:00</p>
+                <a href="#" target="_blank" class="needLogin"><span></span>在线客服</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- copyright -->
+<div class="copyright">
+    <div class="wrap">
+        <ul class="cf">
+            <li><a href="#" target="_blank">公司介绍</a></li>
+            <li><a href="#" target="_blank">开发团队</a></li>
+            <li><a href="#" target="_blank">招聘信息</a></li>
+            <li><a href="#" target="_blank">联系我们</a></li>
+            <li><a href="#" target="_blank">法律声明</a></li>
+            <li><a href="#" target="_blank">网站地图</a></li>
+        </ul>
+        <p class="text">京ICP证：050016号《网络文化经营许可证》编号：文网文【2017】8929-1007号《网络视听许可证》编号：0110587 京公网安备11010502033859号 完美世界（北京）软件科技发展有限公司版权所有</p>
+        <div class="link">
+            <a href="#" target="_blank"><img src="images/copyright01.jpg" width="108" height="40" alt="经营性网站备案信息"></a>
+            <a href="#" target="_blank"><img src="images/copyright02.jpg" width="108" height="40" alt="可信网站示范单位"></a>
+            <a href="http://www.bjwhzf.gov.cn/accuse.do" target="_blank"><img src="images/copyright03.jpg" width="108" height="40" alt="举报热线"></a>
+            <a href="#" target="_blank"><img src="images/copyright04.jpg" width="108" height="40" alt="中国网络游戏版权保护联盟"></a>
+            <a href="#" target="_blank"><img src="images/copyright05.jpg" width="108" height="40" alt="绿色通道"></a>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var ctx = '';
+    var host_url = '#';
+    var static_image_url = '#';
+    var sso_service_type = '#';
+    var page_id = 'index';
+    var mobile = '';
+</script>
+<script type="text/javascript" src="js/jq_183.js"></script>
+<script type="text/javascript" src="js/lib.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "#";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<!--登录模块-->
+<script>
+       $("#login").click(function () {
+           showDiv($(".login"));
+           function showDiv(obj){
+               $(obj).show();
+               center(obj);
+               $(window).scroll(function(){
+                   center(obj);
+               });
+               $(window).resize(function(){
+                   center(obj);
+               });
+           }
+           function center(obj){
+               var windowWidth = document.documentElement.clientWidth;
+               var windowHeight = document.documentElement.clientHeight;
+               var popupHeight = $(obj).height();
+               var popupWidth = $(obj).width();
+               $(obj).css({
+                   "position": "absolute",
+                   "top": (windowHeight-popupHeight)/2+$(document).scrollTop(),
+                   "left": (windowWidth-popupWidth)/2
+               });
+           }
+       });
+       // 隐藏登录层
+       $(".close_box font").click(function () {
+           $(".login").delay(1000).fadeOut(1000);
+           setTimeout(function () {
+               $("#form_login").get(0).reset();
+           },1500);
+       });
+</script>
+</body></html>
